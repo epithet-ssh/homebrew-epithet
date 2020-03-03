@@ -2,16 +2,16 @@
 class Epithet < Formula
   desc ""
   homepage "https://epithet.io/"
-  version "0.0.4"
+  version "0.0.7"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/epithet-ssh/epithet/releases/download/0.0.4/epithet_0.0.4_Darwin_x86_64.tar.gz"
-    sha256 "2d391a34be92018495e144bb01f224ada6dfef0572ec8b0647dcf3d7f8dfc973"
+    url "https://github.com/epithet-ssh/epithet/releases/download/0.0.7/epithet_0.0.7_Darwin_x86_64.tar.gz"
+    sha256 "1930004418b6a99b18089005573f4ed485f840071c7cf4b4abc1caf687ad0e88"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/epithet-ssh/epithet/releases/download/0.0.4/epithet_0.0.4_Linux_x86_64.tar.gz"
-      sha256 "723c78def4dfae29c4f99946ea18f45eacd9c426dc6fe05a97d8eefcbb6f6430"
+      url "https://github.com/epithet-ssh/epithet/releases/download/0.0.7/epithet_0.0.7_Linux_x86_64.tar.gz"
+      sha256 "686143dad9da86ece918af8196f681e15d1d2e94dc9007346f20f555c8ed7f17"
     end
   end
 
@@ -22,7 +22,7 @@ class Epithet < Formula
   end
 
   def caveats; <<~EOS
-    some instructions
+    Installs the binaries, but no configs
   EOS
   end
 
