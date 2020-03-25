@@ -6,12 +6,12 @@ class Epithet < Formula
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/epithet-ssh/epithet/releases/download/0.0.8/epithet_0.0.8_Darwin_x86_64.tar.gz"
-    sha256 "f7bdf9e9cf0f152eb7368a158fdd615b67ed5e0a803ecc0d611c0e61e0313136"
+    url "https://github.com/epithet-ssh/epithet/releases/download/v0.0.8/epithet_0.0.8_Darwin_x86_64.tar.gz"
+    sha256 "3af64f76cce032b0c08cd5e63b158638f5377e7ce3446dd38c629291641ba2c3"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/epithet-ssh/epithet/releases/download/0.0.8/epithet_0.0.8_Linux_x86_64.tar.gz"
-      sha256 "2c4cd6d3210a8a6fcc30634677b1c839388958b7c6a2aa15117abed3b9b6a3cd"
+      url "https://github.com/epithet-ssh/epithet/releases/download/v0.0.8/epithet_0.0.8_Linux_x86_64.tar.gz"
+      sha256 "72d5d2fdff54ee246f89f64364630e9544cd7674003cb446761c1390437b4b99"
     end
   end
 
