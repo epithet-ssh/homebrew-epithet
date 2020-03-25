@@ -2,29 +2,30 @@
 class EpithetOidc < Formula
   desc ""
   homepage "https://epithet.io/"
-  version "0.0.2"
+  version "0.0.3"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/epithet-ssh/epithet-oidc/releases/download/0.0.2/epithet-oidc_0.0.2_Darwin_x86_64.tar.gz"
-    sha256 "841bdad0db41dd81c4cf6db716a1d9b4cae1308eb83ae40c0c61247678afe739"
+    url "https://github.com/epithet-ssh/epithet-oidc/releases/download/v0.0.3/epithet-oidc_0.0.3_Darwin_x86_64.tar.gz"
+    sha256 "221f1fe026abc5a9b66f2e901033bc66aaae2312f89fee1a11b23a697d6e1915"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/epithet-ssh/epithet-oidc/releases/download/0.0.2/epithet-oidc_0.0.2_Linux_x86_64.tar.gz"
-      sha256 "d53cbd499d63fff81c58d2cd8f6f6ee01de39eac95d8e7858a9c487a7f877dd6"
+      url "https://github.com/epithet-ssh/epithet-oidc/releases/download/v0.0.3/epithet-oidc_0.0.3_Linux_x86_64.tar.gz"
+      sha256 "c6b732de25153e81a7436de36fe94c5834bd4d4e8bfcddfe4304030dd5c6f239"
     end
   end
 
   def install
     bin.install "epithet-oidc-plugin"
+    bin.install "epithet-oidc-policy"
   end
 
   def caveats; <<~EOS
-    some instructions
+    Installs the binaries, but no configs
   EOS
   end
 
   test do
-    system "#{bin}/epithet-oidc-plugin --version"
+    system "#{bin}/epithet-oidc-plugin -h"
   end
 end
