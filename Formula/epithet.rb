@@ -2,16 +2,16 @@
 class Epithet < Formula
   desc ""
   homepage "https://epithet.io/"
-  version "0.0.8"
+  version "0.0.10"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/epithet-ssh/epithet/releases/download/v0.0.8/epithet_0.0.8_Darwin_x86_64.tar.gz"
-    sha256 "3af64f76cce032b0c08cd5e63b158638f5377e7ce3446dd38c629291641ba2c3"
+    url "https://github.com/epithet-ssh/epithet/releases/download/v0.0.10/epithet_0.0.10_Darwin_x86_64.tar.gz"
+    sha256 "413e319181d739d16e87d782107e71911228d9645f3a254bbf716ac94f4e2793"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/epithet-ssh/epithet/releases/download/v0.0.8/epithet_0.0.8_Linux_x86_64.tar.gz"
-      sha256 "72d5d2fdff54ee246f89f64364630e9544cd7674003cb446761c1390437b4b99"
+      url "https://github.com/epithet-ssh/epithet/releases/download/v0.0.10/epithet_0.0.10_Linux_x86_64.tar.gz"
+      sha256 "9f0314f50ee101a94b8ab1965c76ba4ca3c85848896fc24f33dbffb1283053d1"
     end
   end
 
