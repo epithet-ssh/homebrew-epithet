@@ -2,16 +2,16 @@
 class EpithetOidc < Formula
   desc ""
   homepage "https://epithet.io/"
-  version "0.0.4"
+  version "0.0.5"
   bottle :unneeded
 
   if OS.mac?
-    url "https://github.com/epithet-ssh/epithet-oidc/releases/download/v0.0.4/epithet-oidc_0.0.4_Darwin_x86_64.tar.gz"
-    sha256 "03ce3b92c2c3bf1eefb3f3218628eb82ada3655b4042f04f3b635c018e6142a8"
+    url "https://github.com/epithet-ssh/epithet-oidc/releases/download/v0.0.5/epithet-oidc_0.0.5_Darwin_x86_64.tar.gz"
+    sha256 "08103654f801dd8b7c56e6cafbf74e9b8d90b3fb9256e4f94d976f39df95a071"
   elsif OS.linux?
     if Hardware::CPU.intel?
-      url "https://github.com/epithet-ssh/epithet-oidc/releases/download/v0.0.4/epithet-oidc_0.0.4_Linux_x86_64.tar.gz"
-      sha256 "82ef9c43ba20ca27e6285012ffed99cede60fb84053133fe87f89cfc3e77e64c"
+      url "https://github.com/epithet-ssh/epithet-oidc/releases/download/v0.0.5/epithet-oidc_0.0.5_Linux_x86_64.tar.gz"
+      sha256 "c5487515d764e4fd7eb69cda6e65dd6154b580a44dcb2f44191e1ae5ba006bb5"
     end
   end
 
